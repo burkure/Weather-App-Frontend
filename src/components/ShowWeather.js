@@ -1,6 +1,6 @@
 import React from "react";
 import "./showweather.css";
-function DisplayWeather(props) {
+function ShowWeather(props) {
   const { data } = props;
   
   const iconurl =
@@ -8,7 +8,7 @@ function DisplayWeather(props) {
     `${data.cod != 404 ? data.weather[0].icon : null}` +
     ".png";
   return (
-    <div className="displayweather">
+    <div className="showweather">
       {data.cod != 404 ? (
         <React.Fragment>
           <div className="maincard">
@@ -126,4 +126,4 @@ function DisplayWeather(props) {
   );
 }
 
-export default DisplayWeather;
+export default ShowWeather;
