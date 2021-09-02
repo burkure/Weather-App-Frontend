@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DisplayWeather from "./DisplayWeather";
+import ShowWeather from "./ShowWeather";
 import "./weather.css";
 
 
@@ -55,7 +55,7 @@ function Weather() {
       {/* {console.log(weather)} */}
       {weather.data != undefined ? (
         <div>
-          <DisplayWeather data={weather.data} />
+          <ShowWeather data={weather.data} />
         </div>
       ) : null}
       </div>
